@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llmakeitrespond"
+version = "0.1.0"
+description = "Prompt LLMs on multiple OpenAI-compatible servers and transparently pick the fastest."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["openai>=1.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
